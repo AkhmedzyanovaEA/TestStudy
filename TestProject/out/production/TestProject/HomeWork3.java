@@ -4,48 +4,30 @@ public class HomeWork3 {
 
         int[] array1 = {1, 1, 0, 0, 1};
 
-        changeVal(array1);
+        replaceZeroOne(array1);
 
-        for (int i = 0; i < array1.length; i++) {
-            System.out.println(array1[i]);
-        }
+        printArr(array1);
 
         int[] array2 = new int[100];
 
         initArr(array2);
 
-        System.out.println("===========");
-        System.out.println(array2[0]);
-        System.out.println(array2[10]);
-        System.out.println(array2[99]);
-
         int[] array3 = {1, 5, 3, 2, 11, -4, 5, 2, 4, 8, 9, 1};
 
         multValLess(array3, 6);
 
-        System.out.println("===========");
-        for (int i = 0; i < array3.length; i++) {
-            System.out.println(array3[i]);
-        }
+        printArr(array3);
 
         int[][] array4 = new int[5][5];
 
         addDiagVal(array4);
 
-        System.out.println("===========");
-        for (int i = 0; i < array4.length; i++) {
-            for (int j = 0; j < array4[i].length; j++) {
-                System.out.println("[" + i + "].[" + j + "] " + array4[i][j]);
-            }
-        }
+        printArr(array4);
 
 
         int[] array5 = newArr(5, 155);
 
-        System.out.println("===========");
-        for (int i = 0; i < array5.length; i++) {
-            System.out.println(array5[i]);
-        }
+        printArr(array5);
 
 
         int[] array6 = {10, 3, 2, 11, -4, 5, 2};
@@ -64,17 +46,31 @@ public class HomeWork3 {
 
     }
 
-    public static void changeVal(int[] arr) {
+    public static void printArr(int[] arr) {
+        System.out.println("===========");
         for (int i = 0; i < arr.length; i++) {
-            switch (arr[i]) {
-                case 1:
-                    arr[i] = 0;
-                    break;
-                case 0:
-                    arr[i] = 1;
-                    break;
-            }
+            System.out.println(arr[i]);
+        }
 
+    }
+
+    public static void printArr(int[][] arr) {
+        System.out.println("===========");
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.println("[" + i + "].[" + j + "] " + arr[i][j]);
+            }
+        }
+
+    }
+
+    public static void replaceZeroOne(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == 0) {
+                arr[i] = 1;
+            } else {
+                arr[i] = 0;
+            }
         }
     }
 
@@ -95,11 +91,8 @@ public class HomeWork3 {
 
     public static void addDiagVal(int[][] arr) {
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                if (i == j || i == arr[i].length - 1 - j) {
-                    arr[i][j] = 1;
-                }
-            }
+            arr[i][i] = 1;
+            arr[i][arr[i].length - 1 - i] = 1;
         }
     }
 
