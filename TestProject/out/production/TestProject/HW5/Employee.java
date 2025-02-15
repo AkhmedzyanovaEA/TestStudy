@@ -10,10 +10,10 @@ public class Employee {
     private int salary;
     private int age;
 
-    public Employee(String name, String lastname, String post, String email, String phone, int salary, int age) {
+    public Employee(String lastname, String name, String post, String email, String phone, int salary, int age) {
 
-        this.name = name;
         this.lastname = lastname;
+        this.name = name;
         this.post = post;
         this.email = email;
         this.phone = phone;
@@ -79,7 +79,7 @@ public class Employee {
     }
 
     public void info() {
-        System.out.println("Information: " + this.name + ' ' + this.lastname + ' ' + this.post + ' ' + this.age);
+        System.out.println("Information: " + this.lastname + ' ' + this.name + ' ' + this.post + ' ' + this.age);
     }
 }
 
