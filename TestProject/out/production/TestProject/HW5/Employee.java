@@ -78,8 +78,8 @@ public class Employee {
         this.age = age;
     }
 
-    public void info() {
-        System.out.println("Information: " + this.lastname + ' ' + this.name + ' ' + this.post + ' ' + this.age);
+    public String info() {
+         return ("Information: " + this.lastname + ' ' + this.name + ' ' + this.post + ' ' + this.age);
     }
 }
 

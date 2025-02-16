@@ -13,7 +13,7 @@ public class MainRun {
 
         for (int i = 0; i < empArray.length; i++) {
             if (empArray[i].getAge() > 40) {
-                empArray[i].info();
+               System.out.println ( empArray[i].info());
             }
         }
 
