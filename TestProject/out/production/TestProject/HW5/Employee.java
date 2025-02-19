@@ -22,61 +22,6 @@ public class Employee {
 
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public String getLastname() {
-        return lastname;
-    }
-
-    public String getPost() {
-        return post;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public int getSalary() {
-        return salary;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
-    }
-
-    public void setPost(String post) {
-        this.post = post;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public void setSalary(int salary) {
-        this.salary = salary;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
 
     public String info() {
          return ("Information: " + this.lastname + ' ' + this.name + ' ' + this.post + ' ' + this.age);
