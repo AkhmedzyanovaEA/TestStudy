@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name = "SuiteOne">
+
+    <test name = "MultTest">
+        <classes>
+            <class name="org.example.MultCalculatorTest" />
+        </classes>
+    </test>
+
+    <test name = "DivTest">
+        <classes>
+            <class name="org.example.DivCalculatorTest" />
+        </classes>
+    </test>
+
+    <test name = "SinTest">
+        <classes>
+            <class name="org.example.SinCalculatorTest" />
+        </classes>
+    </test>
+
+    <test name = "CosTest">
+        <classes>
+            <class name="org.example.CosCalculatorTest" />
+        </classes>
+    </test>
+
+</suite>
